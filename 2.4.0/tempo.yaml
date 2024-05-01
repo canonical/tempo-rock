@@ -25,7 +25,7 @@ ingester:
 
 compactor:
   compaction:
-    block_retention: 30d                # overall Tempo trace retention.
+    block_retention: 720h                # overall Tempo trace retention.
     compacted_block_retention: 1h
 
 storage:

@@ -2,7 +2,7 @@ name: tempo
 summary: Tempo in a ROCK.
 description: "Tempo is a distributed tracing backend by Grafana."
 version: "2.4.0"
-base: ubuntu:22.04
+base: ubuntu@22.04
 license: AGPL-3.0
 services:
   tempo:
@@ -18,15 +18,15 @@ parts:
     source-type: git
     source-tag: "v2.4.0"
     build-snaps:
-      - go/1.20/stable
+      - go/1.21/stable
     build-environment:
       - BUILD_IN_CONTAINER: "false"
     build-packages:
       - libsystemd-dev
     override-build: |
-      install -D -m755 ./cmd/tempo/tempo ${CRAFT_PART_INSTALL}/usr/bin/tempo
+      go build -o $CRAFT_PART_INSTALL/bin/tempo ./cmd/tempo
     stage:
-      - usr/bin/tempo
+      - bin/tempo
   default-config:
     plugin: dump
     source: .
