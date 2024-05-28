@@ -1,6 +1,6 @@
 # tempo-rock
 
-[![Open a PR to OCI Factory](https://github.com/canonical/tempo-rock/actions/workflows/tempo-release-oci-factory.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-oci-factory.yaml)
+[![Open a PR to OCI Factory](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-oci-factory.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-oci-factory.yaml)
 [![Publish to GHCR:dev](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-dev.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-dev.yaml)
 [![Update Rock](https://github.com/canonical/tempo-rock/actions/workflows/rock-update.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/rock-update.yaml)
 
