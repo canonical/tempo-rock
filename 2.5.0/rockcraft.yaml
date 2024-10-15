@@ -24,7 +24,7 @@ parts:
     build-packages:
       - libsystemd-dev
     override-build: |
-      go build -o $CRAFT_PART_INSTALL/bin/tempo ./cmd/tempo
+      go build -o $CRAFT_PART_INSTALL/bin/tempo -ldflags "-X main.Version=${CRAFT_PROJECT_VERSION}" ./cmd/tempo
     stage:
       - bin/tempo
   default-config:
