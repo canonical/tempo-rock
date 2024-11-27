@@ -8,9 +8,6 @@ settings:
   components:
     - tempo
     - team-tracing
-
-  labels:
-    - 25.04
       
   add_gh_comment: false
   sync_description: false
