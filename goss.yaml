@@ -1,0 +1,16 @@
+process:
+  tempo:
+    running: true
+http:
+  ready:
+    status: 200
+    url: http://localhost:3200/ready
+  metrics:
+    status: 200
+    url: http://localhost:3200/metrics
+  status:
+    status: 200
+    url: http://localhost:3200/status
+  buildinfo:
+    status: 200
+    url: http://localhost:3200/api/status/buildinfo
