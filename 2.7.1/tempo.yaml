@@ -8,15 +8,23 @@ distributor:
     jaeger:                            # the receives all come from the OpenTelemetry collector.  more configuration information can
       protocols:                       # be found there: https://github.com/open-telemetry/opentelemetry-collector/tree/main/receiver
         thrift_http:                   #
+          endpoint: 0.0.0.0:14268
         grpc:                          # for a production deployment you should only enable the receivers you need!
+          endpoint: 0.0.0.0:14250
         thrift_binary:
+          endpoint: 0.0.0.0:6832
         thrift_compact:
+          endpoint: 0.0.0.0:6831
     zipkin:
+      endpoint: 0.0.0.0:9411
     otlp:
       protocols:
         http:
+          endpoint: 0.0.0.0:4318
         grpc:
+          endpoint: 0.0.0.0:4317
     opencensus:
+      endpoint: 0.0.0.0:55678
 
 ingester:
   trace_idle_period: 10s
