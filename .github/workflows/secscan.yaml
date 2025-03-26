@@ -1,0 +1,13 @@
+name: Security vulnerability scan
+
+on:
+    workflow_dispatch:
+    pull_request:
+
+jobs:
+    scan:
+        name: Secscan
+        uses: canonical/observability/.github/workflows/rock-sec-scan.yaml@feat/secscan
+        secrets: inherit
+        with:
+          rock-name: "tempo"
