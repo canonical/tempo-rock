@@ -24,3 +24,4 @@ Automation takes care of:
 * pulling upstream releases, creating a PR with the necessary files to be manually reviewed;
 * on PRs, validate the added (or modified) rocks by running `kgoss`;
 * releasing to GHCR at [ghcr.io/canonical/tempo:dev](https://ghcr.io/canonical/tempo:dev), when merging to main, for development purposes.
+
