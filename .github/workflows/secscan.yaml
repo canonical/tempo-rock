@@ -7,7 +7,8 @@ on:
 jobs:
     scan:
         name: Secscan
-        uses: canonical/observability/.github/workflows/rock-sec-scan.yaml@feat/secscan
+        uses: canonical/observability/.github/workflows/rock-sec-scan.yaml@feat/secscan-test
         secrets: inherit
         with:
-          rock-name: "tempo"
+          rock-name: "ubuntu/tempo"
+          rock-version: 2-24.04
