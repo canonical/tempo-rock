@@ -1,8 +1,8 @@
 # tempo-rock
 
-[![Open a PR to OCI Factory](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-oci-factory.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-oci-factory.yaml)
-[![Publish to GHCR:dev](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-dev.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/rock-release-dev.yaml)
-[![Update Rock](https://github.com/canonical/tempo-rock/actions/workflows/rock-update.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/rock-update.yaml)
+[![Open a PR to OCI Factory](https://github.com/canonical/tempo-rock/actions/workflows/release-oci-factory.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/release-oci-factory.yaml)
+[![Publish to GHCR:dev](https://github.com/canonical/tempo-rock/actions/workflows/release-dev.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/release-dev.yaml)
+[![Update Rock](https://github.com/canonical/tempo-rock/actions/workflows/update.yaml/badge.svg)](https://github.com/canonical/tempo-rock/actions/workflows/update.yaml)
 
 [Rocks](https://canonical-rockcraft.readthedocs-hosted.com/en/latest/) for [tempo](https://grafana.com/oss/tempo/).  
 This repository holds all the necessary files to build rocks for the upstream versions we support. The tempo rock is used by the [tempo-k8s-operator](https://github.com/canonical/tempo-k8s-operator) charm.
