@@ -8,7 +8,7 @@ on:
 jobs:
   update:
     name: Update rock
-    uses: canonical/observability/.github/workflows/rock-update.yaml@0aac30b0842d2c7c6258809d0ea8509cc890fddc
+    uses: canonical/observability/.github/workflows/rock-update.yaml@v2
     secrets: inherit
     with:
       source-repo: grafana/tempo
