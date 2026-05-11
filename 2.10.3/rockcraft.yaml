@@ -2,7 +2,7 @@ name: tempo
 summary: Tempo in a Rock.
 description: "Tempo is a distributed tracing backend by Grafana."
 version: "2.10.3"
-base: ubuntu@24.04
+base: ubuntu@26.04
 license: AGPL-3.0
 services:
   tempo:
